@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.05.00">
+    <object class="AudioFile" id="{d09e6842-8233-4bd6-a645-180c33fdd813}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>3.4285714285714284</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/DeathAnnouncer1 {50356a74-7e52-43b3-b918-0a613061496b}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{dabfe4ad-8c18-44c7-bcdb-382c5ab7cd19}</destination>
+        </relationship>
+    </object>
+</objects>
