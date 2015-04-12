@@ -1,6 +1,13 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{D00A3898-4658-4252-7E9E-BAA62E1FCBDD}",
+	"EngineAssociation": "{93ABFDB0-45C7-69B8-814C-AE99561B37EB}",
 	"Category": "",
-	"Description": ""
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "NoiseAboveThePit",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
 }
