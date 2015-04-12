@@ -14,6 +14,9 @@ class NOISEABOVETHEPIT_API AGameHUD : public AHUD
 	GENERATED_BODY()
 private:
 	static uint64_t Score;
+	static int32	ComboMultiplyer;
+	static int32	Speed;
+	static int32	Life;
 	
 public:
 	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
@@ -24,4 +27,28 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
 	static void AddScore(int32 score);
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static FString GetComboMultiplyer();
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static void SetComboMultipyer(int32 combo);
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static FString GetLife();
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static void DamagePlayer();
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static void SetLife(int32 life);
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static void SetSpeed(int32 speed);
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static FString GetSpeed();
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static void TickScore();
 };

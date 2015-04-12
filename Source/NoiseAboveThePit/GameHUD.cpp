@@ -8,6 +8,9 @@
 
 /** Set the the maximum possible value */
 uint64_t AGameHUD::Score = 0; //0xFFFFFFFFFFFFFFFF;
+int32 AGameHUD::Life = 3;
+int32 AGameHUD::ComboMultiplyer = 1;
+int32 AGameHUD::Speed = 100;
 
  FString AGameHUD::GetScore()
 {
@@ -30,3 +33,50 @@ uint64_t AGameHUD::Score = 0; //0xFFFFFFFFFFFFFFFF;
  {
 	 Score += score;
  }
+
+
+FString AGameHUD::GetComboMultiplyer()
+ {
+	return FString::FromInt(ComboMultiplyer);
+ }
+
+
+void AGameHUD::SetComboMultipyer(int32 combo)
+{
+	ComboMultiplyer = combo;
+}
+
+
+FString AGameHUD::GetLife()
+{
+	return FString::FromInt(Life);
+}
+
+
+void AGameHUD::DamagePlayer()
+{
+	Life--;
+}
+
+
+void AGameHUD::SetLife(int32 life)
+{
+	Life = life;
+}
+
+
+void AGameHUD::SetSpeed(int32 speed)
+{
+	Speed = speed;
+}
+
+
+FString AGameHUD::GetSpeed()
+{
+	return FString::FromInt(Speed);
+}
+
+void AGameHUD::TickScore()
+{
+	Score += 8 * ComboMultiplyer;
+}
