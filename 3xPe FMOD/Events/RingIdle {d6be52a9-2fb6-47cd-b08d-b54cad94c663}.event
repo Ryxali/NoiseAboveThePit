@@ -75,6 +75,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{c43cdb89-9a42-4fa7-bd90-aa184bdcd3d3}">
+        <property name="volume">
+            <value>2</value>
+        </property>
         <property name="name">
             <value>Master</value>
         </property>
@@ -175,7 +178,7 @@
             <value>19.000000283122063</value>
         </property>
         <property name="value">
-            <value>-80</value>
+            <value>-24.782608</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{afe04788-4c11-4da7-998e-cb899d9537e4}">
@@ -193,6 +196,12 @@
     <object class="SpatialiserEffect" id="{c3791c23-f490-48a6-b738-e8b1f30daaca}">
         <property name="distanceRolloffType">
             <value>2</value>
+        </property>
+        <property name="minimumDistance">
+            <value>3</value>
+        </property>
+        <property name="maximumDistance">
+            <value>30</value>
         </property>
     </object>
     <object class="MixerSend" id="{b40e125b-00db-4ddc-8529-96b76e8f6e07}">
