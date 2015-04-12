@@ -17,6 +17,8 @@ private:
 	static int32	ComboMultiplyer;
 	static int32	Speed;
 	static int32	Life;
+	static bool		bInvulnerableStatus;
+	static FTimerHandle InvulnerabilityTimerHandle;
 	
 public:
 	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
@@ -51,4 +53,12 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
 	static void TickScore();
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static void EnableInvulnerability(float seconds);
+
+	UFUNCTION(BlueprintCallable, Category = "ScoreKeeper")
+	static bool GetInvulnerability();
+
+	static void DisableInvulnerability();
 };
