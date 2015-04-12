@@ -62,6 +62,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{e4948b84-cc3e-4267-97ff-a336af39217c}">
+        <property name="volume">
+            <value>6</value>
+        </property>
         <property name="name">
             <value>Master</value>
         </property>
@@ -179,7 +182,7 @@
             <value>1</value>
         </property>
         <property name="soundSize">
-            <value>0.249999985</value>
+            <value>10000</value>
         </property>
     </object>
     <object class="MixerSend" id="{c65e3919-b44e-49a6-a403-1d556fb0cd9a}">

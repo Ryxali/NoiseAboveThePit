@@ -214,6 +214,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{bc3d9484-2a73-47d4-bfe6-e8e7e9bf2ff0}">
+        <property name="volume">
+            <value>-4</value>
+        </property>
         <property name="name">
             <value>Master</value>
         </property>
@@ -715,6 +718,9 @@
         <property name="surroundPanExtent">
             <value>206.599991</value>
         </property>
+        <property name="surroundLFELevel">
+            <value>-9</value>
+        </property>
     </object>
     <object class="MixerBusEffectChain" id="{48e6a903-d12c-4dca-bd78-4313129940d5}">
         <relationship name="effects">
@@ -928,11 +934,14 @@
     </object>
     <object class="MixerBusFader" id="{40601a9e-bc7b-4065-bfba-233c10878a53}"/>
     <object class="SpatialiserEffect" id="{bd853581-92e2-4c09-9dab-2da9cdeb4301}">
+        <property name="distanceRolloffType">
+            <value>4</value>
+        </property>
         <property name="extentMode">
             <value>1</value>
         </property>
         <property name="soundSize">
-            <value>0.099999994</value>
+            <value>10000</value>
         </property>
     </object>
     <object class="MixerSend" id="{39b8fe5b-440b-4ef8-bab2-3119c65ebd3c}">
