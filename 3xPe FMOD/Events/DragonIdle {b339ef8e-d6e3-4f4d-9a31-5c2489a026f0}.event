@@ -80,7 +80,7 @@
     </object>
     <object class="EventMixerMaster" id="{a0a6517d-211c-4b4c-a726-1aeed8db3d55}">
         <property name="volume">
-            <value>4</value>
+            <value>1</value>
         </property>
         <property name="name">
             <value>Master</value>
@@ -156,7 +156,7 @@
     </object>
     <object class="AutomationScale" id="{90360d41-3cb3-44a0-b234-ee4cb620cfeb}">
         <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,40.000000)}</value>
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,25.000000)}</value>
         </property>
         <property name="associatedClassName">
             <value>GameParameter</value>
@@ -193,7 +193,7 @@
     </object>
     <object class="AutomationPoint" id="{70ad6669-705d-4a9f-8a48-df8327b8b960}">
         <property name="position">
-            <value>38.500000573694706</value>
+            <value>24.062500358559191</value>
         </property>
         <property name="value">
             <value>4400.00098</value>
@@ -202,7 +202,7 @@
     <object class="MixerBusFader" id="{41fea203-198d-4f78-bc2e-a6f7c1387adc}"/>
     <object class="SpatialiserEffect" id="{d05b26e9-6c38-4bab-9d21-8b41c47dee45}">
         <property name="maximumDistance">
-            <value>40</value>
+            <value>25</value>
         </property>
     </object>
     <object class="MixerSend" id="{40862a69-e7b7-472b-ad97-d19dd1663d60}">
