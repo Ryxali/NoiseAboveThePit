@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.05.00">
+    <object class="AudioFile" id="{186ec4d9-fb2a-4775-8c15-40821c891413}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>4.9285714285714288</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/DragonIdle {58fa3e91-8331-4deb-aaa7-6e4f8bc14a6b}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{dabfe4ad-8c18-44c7-bcdb-382c5ab7cd19}</destination>
+        </relationship>
+    </object>
+</objects>

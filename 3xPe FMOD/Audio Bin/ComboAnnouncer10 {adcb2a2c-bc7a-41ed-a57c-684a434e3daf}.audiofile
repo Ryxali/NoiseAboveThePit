@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.05.00">
+    <object class="AudioFile" id="{adcb2a2c-bc7a-41ed-a57c-684a434e3daf}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>6.8571428571428568</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/ComboAnnouncer10 {ae833877-9a3c-437a-b3e3-ec209799ad22}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{dabfe4ad-8c18-44c7-bcdb-382c5ab7cd19}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.05.00">
+    <object class="AudioFile" id="{2739353e-64a6-4951-9fa0-d11dfc59d509}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>3.4285714285714284</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/MaxAnnouncer4 {94c6256d-6919-46a2-943b-7d6984b6e655}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{dabfe4ad-8c18-44c7-bcdb-382c5ab7cd19}</destination>
+        </relationship>
+    </object>
+</objects>
