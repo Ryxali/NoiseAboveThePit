@@ -2,6 +2,7 @@
 
 #include "NoiseAboveThePit.h"
 #include "GameHUD.h"
+#include "Limbo.h"
 #include "CString.h"
 #include <sstream>
 #include <string>
@@ -11,6 +12,7 @@ uint64_t AGameHUD::Score = 0; //0xFFFFFFFFFFFFFFFF;
 int32 AGameHUD::Life = 3;
 int32 AGameHUD::ComboMultiplyer = 1;
 int32 AGameHUD::Speed = 100;
+bool AGameHUD::bInvulnerableStatus = false;
 
  FString AGameHUD::GetScore()
 {
@@ -79,4 +81,34 @@ FString AGameHUD::GetSpeed()
 void AGameHUD::TickScore()
 {
 	Score += 8 * ComboMultiplyer;
+}
+
+void AGameHUD::EnableInvulnerability(float seconds)
+{
+	if (!bInvulnerableStatus)
+	{
+		
+		auto w = GWorld();
+		auto d = FTimerDelegate::CreateStatic(&AGameHUD::DisableInvulnerability);
+		if (w) {
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("It's WORKING"));
+			w->GetTimerManager().SetTimer(d, 0.1, false, seconds);
+			bInvulnerableStatus = true;
+		}
+		else {
+			GEngine->AddOnScreenDebugMessage(0, 5.f, FColor::Yellow, TEXT("NULL WORLD POINTER"));
+		}
+		
+
+	}
+}
+
+bool AGameHUD::GetInvulnerability()
+{
+	return bInvulnerableStatus;
+}
+
+void AGameHUD::DisableInvulnerability()
+{
+	bInvulnerableStatus = false;
 }
