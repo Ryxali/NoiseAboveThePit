@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.05.00">
     <object class="MixerMaster" id="{d5459009-2f4f-4300-a4a1-dabb417c88a7}">
+        <property name="volume">
+            <value>0.200000003</value>
+        </property>
         <property name="name">
             <value>Master Bus</value>
         </property>
@@ -17,8 +20,14 @@
     <object class="MixerBusEffectChain" id="{21d7a85b-6c57-44b2-9a9e-ad413a9d4427}">
         <relationship name="effects">
             <destination>{6576623e-034a-4f92-9c88-c1cd1dd0e5b1}</destination>
+            <destination>{183926fa-f31d-46e0-bc9e-2cf3acefb459}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{47325462-929f-4029-a94d-121b39cdda2f}"/>
     <object class="MixerBusFader" id="{6576623e-034a-4f92-9c88-c1cd1dd0e5b1}"/>
+    <object class="LowpassEffect" id="{183926fa-f31d-46e0-bc9e-2cf3acefb459}">
+        <property name="cutoff">
+            <value>21800</value>
+        </property>
+    </object>
 </objects>
